@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
