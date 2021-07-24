@@ -1,13 +1,13 @@
 .countriesList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 460px) {
-    .countriesList {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+  .countriesList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

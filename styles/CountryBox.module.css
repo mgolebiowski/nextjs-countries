@@ -1,16 +1,16 @@
 .CountryBox {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 10px 10px;
-    width: 80%;
-    background-color: var(--color-bg-secondary);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px 10px;
+  width: 80%;
+  background-color: var(--color-bg-secondary);
 }
 
 @media screen and (min-width: 460px) {
-    .CountryBox {
-        width: 350px;
-    }
+  .CountryBox {
+    width: 350px;
+  }
 }
 
 .details {
-    padding: 1em 1em;
+  padding: 1em 1em;
 }

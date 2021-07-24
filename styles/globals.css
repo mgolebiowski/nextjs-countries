@@ -25,9 +25,10 @@ body {
   color: var(--color-text-primary);
 }
 
-input[type="text"], textarea, option {
-
-  background-color : var(--color-bg-primary); 
+input[type="text"],
+textarea,
+option {
+  background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }
 

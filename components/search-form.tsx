@@ -12,9 +12,9 @@ export default function SearchForm({ onSearch = () => {} }: SearchFormProps) {
   const [query, setQuery] = useState<NullableString>(null);
 
   function setSearchState(e: SyntheticEvent) {
-    if (e.currentTarget.id === 'country') {
+    if (e.currentTarget.id === "country") {
       setQuery((e.currentTarget as HTMLInputElement).value);
-    } else if (e.currentTarget.id === 'continent') {
+    } else if (e.currentTarget.id === "continent") {
       chooseContinent((e.currentTarget as HTMLInputElement).value || null);
     }
   }
@@ -25,9 +25,19 @@ export default function SearchForm({ onSearch = () => {} }: SearchFormProps) {
 
   return (
     <form className={styles.searchForm}>
-      <input name="country" type="text" id="country" onChange={setSearchState}></input>
-      <select name="continent" id="continent" value={chosenContinent || ''} onChange={setSearchState}>
-        <option value=''>--</option>
+      <input
+        name="country"
+        type="text"
+        id="country"
+        onChange={setSearchState}
+      ></input>
+      <select
+        name="continent"
+        id="continent"
+        value={chosenContinent || ""}
+        onChange={setSearchState}
+      >
+        <option value="">--</option>
         <option value="Africa">Africa</option>
         <option value="Americas">Americas</option>
         <option value="Asia">Asia</option>
