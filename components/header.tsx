@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <h1>Where is the world?</h1>
+      <h1>Where in the world?</h1>
       <div className={styles.headerActions}>
         <button onClick={() => toggleTheme()}>Dark mode</button>
       </div>
