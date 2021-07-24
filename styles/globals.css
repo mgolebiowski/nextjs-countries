@@ -3,6 +3,7 @@ body[data-theme="light"] {
   --color-text-primary: hsl(200, 15%, 8%);
   --color-text-secondary: #076963;
   --color-bg-primary: hsl(0, 0%, 98%);
+  --color-bg-secondary: hsl(0, 0%, 100%);
   --color-bg-toggle: #1e90ff;
 }
 
@@ -10,6 +11,7 @@ body[data-theme="dark"] {
   --color-text-primary: hsl(0, 0%, 100%);
   --color-text-secondary: #ff6b00;
   --color-bg-primary: hsl(207, 26%, 17%);
+  --color-bg-secondary: hsl(209, 23%, 22%);
   --color-bg-toggle: #a9a9a9;
 }
 
