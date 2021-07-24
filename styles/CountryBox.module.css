@@ -1,0 +1,9 @@
+.CountryBox {
+    border: 1px black solid;
+    margin: 10px 0;
+    width: 250px;
+}
+
+.details {
+    padding: 0 5px;
+}

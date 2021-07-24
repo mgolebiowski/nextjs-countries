@@ -1,14 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
+import CountryBox, { ICountry } from "../components/country-box";
 
 import SearchForm from "../components/search-form";
 
 import styles from "../styles/Home.module.css";
 
-interface ICountry {
-  alpha2Code: string;
-  name: string;
-  region: string;
-}
+
 
 export default function Home() {
   const [countryList, setCountryList] = useState<ICountry[]>([]);
@@ -38,9 +35,7 @@ export default function Home() {
         <SearchForm {...{ onSearch }} />
         <div className={styles.countriesList}>
           {countriesToShow.map((country) => (
-            <div key={country.alpha2Code}>
-              <h3>{country.name}</h3>
-            </div>
+            <CountryBox key={country.alpha2Code} country={country} />
           ))}
         </div>
       </main>
