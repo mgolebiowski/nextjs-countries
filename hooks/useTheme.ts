@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-type themeOptions = "light" | "dark";
+export type themeOptions = "light" | "dark";
 
 const themesStateMachine: Record<themeOptions, themeOptions> = {
   light: "dark",
