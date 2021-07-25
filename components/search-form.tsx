@@ -25,12 +25,17 @@ export default function SearchForm({ onSearch = () => {} }: SearchFormProps) {
 
   return (
     <form className={styles.searchForm}>
-      <input
-        name="country"
-        type="text"
-        id="country"
-        onChange={setSearchState}
-      ></input>
+      <div className={styles.search}>
+        <i className={`fas fa-search ${styles.searchIcon}`}></i>
+        <input
+          name="country"
+          type="text"
+          id="country"
+          className={styles.searchInput}
+          onChange={setSearchState}
+          placeholder="Search for a country..."
+        ></input>
+      </div>
       <select
         name="region"
         id="region"

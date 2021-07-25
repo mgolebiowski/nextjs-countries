@@ -2,3 +2,22 @@
   display: flex;
   flex-direction: column;
 }
+
+.search {
+  width: 100%;
+  position: relative;
+  margin: 1rem;
+}
+
+.searchIcon {
+  position: absolute;
+  font-size: 1rem;
+  top: calc(22px - 0.5rem);
+  margin-left: 1rem;
+  color: var(--color-search-icon);
+}
+
+.searchInput {
+  width: calc(100% - 2rem);
+  margin: 0;
+}

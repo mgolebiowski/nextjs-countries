@@ -2,6 +2,7 @@ body,
 body[data-theme="light"] {
   --color-text-primary: hsl(200, 15%, 8%);
   --color-text-secondary: #076963;
+  --color-search-icon: hsl(0, 0%, 75%);
   --color-bg-primary: hsl(0, 0%, 98%);
   --color-bg-secondary: hsl(0, 0%, 100%);
   --color-bg-toggle: #1e90ff;
@@ -10,6 +11,7 @@ body[data-theme="light"] {
 body[data-theme="dark"] {
   --color-text-primary: hsl(0, 0%, 100%);
   --color-text-secondary: #ff6b00;
+  --color-search-icon: hsl(0, 0%, 100%);
   --color-bg-primary: hsl(207, 26%, 17%);
   --color-bg-secondary: hsl(209, 23%, 22%);
   --color-bg-toggle: #a9a9a9;
@@ -32,6 +34,18 @@ option {
   background-color: var(--color-bg-secondary);
   color: var(--color-text-primary);
   border-color: var(--color-bg-secondary);
+}
+
+input[type="text"]::placeholder {
+  color: var(--color-search-icon);
+}
+
+input[type=text] {
+  border: 0px solid var(--color-bg-secondary);
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 button {
