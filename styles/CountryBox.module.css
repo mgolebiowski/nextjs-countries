@@ -4,6 +4,7 @@
   width: 80%;
   background-color: var(--color-bg-secondary);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 460px) {

@@ -1,0 +1,37 @@
+.countryPage {
+    margin: 1rem;
+}
+
+.backButton {
+    padding: 0.5rem 2rem;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    margin: 1rem 0 3rem;
+}
+
+.countryData {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flagContainer {
+    flex-basis: 50%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.detailsContainer {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 460px) {
+    .countryData {
+        flex-direction: row;
+    }
+
+    .flagContainer {
+        padding: 2rem;
+    }
+}
