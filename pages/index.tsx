@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import Header from "next/head";
 import CountryBox, { ICountry } from "../components/country-box";
 
 import SearchForm from "../components/search-form";
@@ -33,6 +34,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <Header>
+        <title>Flags finder</title>
+      </Header>
       <main className={styles.main}>
         <SearchForm {...{ onSearch }} />
         <div className={styles.countriesList}>
