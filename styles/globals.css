@@ -35,9 +35,13 @@ option {
 }
 
 button {
+  font-family: Nunito Sans, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--color-bg-secondary);
   border: none;
   color: var(--color-text-primary);
+  cursor: pointer;
+  height: 100%;
 }
 
 a {

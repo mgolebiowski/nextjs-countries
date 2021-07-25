@@ -20,9 +20,9 @@ export default function Home() {
   }, []);
 
   const onSearch = useCallback(
-    (query, continent) => {
+    (query, chosenRegion) => {
       const newCountries = countryList
-        .filter(({ region }) => continent === null || region === continent)
+        .filter(({ region }) => chosenRegion === null || region === chosenRegion)
         .filter(
           ({ name }) =>
             query === null || name.toLowerCase().includes(query.toLowerCase())
