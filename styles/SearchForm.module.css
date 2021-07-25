@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.search {
+  flex-basis: 100%;
+  position: relative;
+  margin: 1rem;
+}
+
 @media screen and (min-width: 760px) {
   .searchForm {
     flex-direction: row;
@@ -14,12 +20,6 @@
   }
 }
 
-.search {
-  width: 100%;
-  position: relative;
-  margin: 1rem;
-}
-
 .searchIcon {
   position: absolute;
   font-size: 1rem;
@@ -29,7 +29,7 @@
 }
 
 .searchInput {
-  width: calc(100% - 2rem);
+  width: 100%;
   margin: 0;
 }
 
