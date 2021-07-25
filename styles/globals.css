@@ -30,7 +30,7 @@ body {
 
 input[type="text"],
 textarea,
-option {
+select {
   background-color: var(--color-bg-secondary);
   color: var(--color-text-primary);
   border-color: var(--color-bg-secondary);

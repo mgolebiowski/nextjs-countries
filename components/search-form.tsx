@@ -41,8 +41,10 @@ export default function SearchForm({ onSearch = () => {} }: SearchFormProps) {
         id="region"
         value={chosenRegion || ""}
         onChange={setSearchState}
+        style={chosenRegion ? {} : { color: 'var(--color-search-icon)' }}
+        className={styles.regionInput}
       >
-        <option value="">--</option>
+        <option value="">Filter by region...</option>
         <option value="Africa">Africa</option>
         <option value="Americas">Americas</option>
         <option value="Asia">Asia</option>
