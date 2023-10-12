@@ -11,7 +11,7 @@ const CountryPage = () => {
   const { country } = router.query;
 
   useEffect(() => {
-    fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+    fetch(`https://restcountries.com/v2/name/${country}`)
       .then((res) => res.json())
       .then((data: ICountry[]) => {
         setCountryData(data[0]);
